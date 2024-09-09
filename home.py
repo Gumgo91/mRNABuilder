@@ -112,7 +112,22 @@ def visualize_rna_structure(rna_sequence, structure):
     
     return fig
 
-st.title("CGInvites mRNA Builder")
+st.title("🧬 CG Invites mRNA Builder")
+st.write("Version 1.0 (Last updated: September 9, 2024)")
+st.write("Created by Hyunseung Kong (Cancervaccine team)")
+
+st.markdown("""
+### About this app
+This tool optimizes mRNA sequences for improved expression in human cells.
+
+### How to use
+1. Select your input sequence type (Protein or mRNA)
+2. Enter your sequence
+3. Choose optimization method(s)
+4. Click 'Optimize Sequence'
+
+For questions or feedback, please contact: hskong@inviteseco.com
+""")
 
 sequence_type = st.selectbox("Select input sequence type:", ["Protein", "mRNA"])
 input_sequence = st.text_area(f"Enter your {sequence_type} sequence:")
